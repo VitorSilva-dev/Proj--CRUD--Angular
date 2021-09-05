@@ -1,0 +1,15 @@
+<h1 class="text-center">Entrar</h1>
+
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+    <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">E-mail</label>
+        <input class="from-control" type="email" name="email" id="email" [(ngModel)]="login.email" required/>
+    </div>
+    <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">Senha</label>
+        <input class="from-control" type="password" name="password" id="password" [(ngModel)]="login.password" required/>
+    </div>
+    <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary block" [disabled]="form.form.invalid">Entrar</button>
+    </div>
+</form>
