@@ -9,8 +9,8 @@ import { AccountService } from 'src/app/shared/account/account.service';
 })
 export class LoginComponent implements OnInit {
   login={
-    email: "",//tester@tindin.com.br
-    password: ""//tester123
+    email: "",
+    password: ""
   };
   
   constructor(
