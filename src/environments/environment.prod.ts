@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  api: 'https://apiadmin.tindin.com.br'
+  api: ''//Adicione aqui a sua API de consumo.
 };
